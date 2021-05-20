@@ -1,0 +1,353 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 7128 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/apool/Downloads/SheathScriptTest
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59685
+Successfully changed project path to: C:/Users/apool/Downloads/SheathScriptTest
+C:/Users/apool/Downloads/SheathScriptTest
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 85.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/apool/Downloads/SheathScriptTest/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x162)
+    Vendor:   
+    VRAM:     992 MB
+    Driver:   10.18.10.4358
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002870 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 75.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.545 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002562 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 76.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.682 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2787 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.7 MB.
+System memory in use after: 128.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3232.
+Total: 2.788000 ms (FindLiveObjects: 0.291900 ms CreateObjectMapping: 0.133400 ms MarkObjects: 2.270300 ms  DeleteObjects: 0.090900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/TempCheck.mat
+  artifactKey: Guid(5c29d1677f55b44428ed39f353c68200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TempCheck.mat using Guid(5c29d1677f55b44428ed39f353c68200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98c97492a759922bb8bb554ef9a53fb') in 0.299283 seconds
+  Import took 0.304595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Transparent.mat
+  artifactKey: Guid(9b1c2c4127138c14fbe216f65910839a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Transparent.mat using Guid(9b1c2c4127138c14fbe216f65910839a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5329c5f383e63ab43ffc537eda90a22d') in 0.013839 seconds
+  Import took 0.021755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/sword_v001.blend
+  artifactKey: Guid(bdad0b02e86145b45baf5a96cd065fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sword_v001.blend using Guid(bdad0b02e86145b45baf5a96cd065fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454ab24d81ddec851a6f339102b6c5de') in 0.190530 seconds
+  Import took 0.196388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/CannonBall.mat
+  artifactKey: Guid(c25221ea6a33d384082fe15b49551dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CannonBall.mat using Guid(c25221ea6a33d384082fe15b49551dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9328c602ed7c46c912fc121afc42f4ef') in 0.012793 seconds
+  Import took 0.018179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Sword.blend
+  artifactKey: Guid(755938936ad38284ab83eb6c1aadb1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sword.blend using Guid(755938936ad38284ab83eb6c1aadb1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b32e543ca7cad71ac5199d300d5fb80') in 0.939490 seconds
+  Import took 0.945653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.298443 seconds.
+  path: Assets/Asset Packs/Kevin Iglesias/Basic Motions Pack/Models/Basic Motions Dummy.fbx
+  artifactKey: Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Kevin Iglesias/Basic Motions Pack/Models/Basic Motions Dummy.fbx using Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d1062c12067bb0c9a4668bbacb0da1') in 0.160681 seconds
+  Import took 0.167664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/RPG Pack/Models/Bottles/bottle_blue.FBX
+  artifactKey: Guid(da8a393ba24fc6f49842d87b0937b84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Pack/Models/Bottles/bottle_blue.FBX using Guid(da8a393ba24fc6f49842d87b0937b84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe92cac2b6492f970bd0fa6cae28250b') in 0.030316 seconds
+  Import took 0.035973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Game/Weapon Prefabs/Bow/BowAnimatorOverrideController.overrideController
+  artifactKey: Guid(92bc9f47f82793c4eaa1648131f830c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapon Prefabs/Bow/BowAnimatorOverrideController.overrideController using Guid(92bc9f47f82793c4eaa1648131f830c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2bf778b5d18062e31c48c7f459ad690') in 0.044905 seconds
+  Import took 0.052615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Pitchfork/Materials and Model/PolyAdventureMaterial_01.mat
+  artifactKey: Guid(fa8eda4ec55ee1a4e99ca991c5828dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Pitchfork/Materials and Model/PolyAdventureMaterial_01.mat using Guid(fa8eda4ec55ee1a4e99ca991c5828dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70029178654d4023c0f23aa8d27c600') in 0.011245 seconds
+  Import took 0.018349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Pitchfork/Materials and Model/PolyAdventureTexture_01.png
+  artifactKey: Guid(b8f889a91be35174bbbb38d1057b6493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Pitchfork/Materials and Model/PolyAdventureTexture_01.png using Guid(b8f889a91be35174bbbb38d1057b6493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9f91e8d0df17daed4e6b1741c094d6') in 0.039043 seconds
+  Import took 0.045859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/VentureSwift/NavMesh.asset
+  artifactKey: Guid(3f5ce8dd91a6af44b8b864b78887cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VentureSwift/NavMesh.asset using Guid(3f5ce8dd91a6af44b8b864b78887cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ed67e1c481023651f4c010b06e9596') in 0.006411 seconds
+  Import took 0.012801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/RPG Pack/Models/Box.FBX
+  artifactKey: Guid(bf5c3e0cc8f27e44fa80b78fbca7ac1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Pack/Models/Box.FBX using Guid(bf5c3e0cc8f27e44fa80b78fbca7ac1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438a5f533cf22eecc966d8210d0bc2fa') in 0.141025 seconds
+  Import took 0.148480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Game/Weapon Prefabs/Sword/SwordAnimatorOverideController.overrideController
+  artifactKey: Guid(1c059a7116a4ec44eb99ef25dff71932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapon Prefabs/Sword/SwordAnimatorOverideController.overrideController using Guid(1c059a7116a4ec44eb99ef25dff71932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f569b32afff942cee4c0b1d24099f2ca') in 0.034674 seconds
+  Import took 0.042548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Scenes/VentureSwift/NavMesh.asset
+  artifactKey: Guid(15fd14bfdce937a4caed25a3e18317da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/VentureSwift/NavMesh.asset using Guid(15fd14bfdce937a4caed25a3e18317da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bd75df187e6794f662227707d469de') in 0.004317 seconds
+  Import took 0.009992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Game/Weapon Prefabs/Magic/FireballOverrideController.overrideController
+  artifactKey: Guid(65422e10f5157c644a550feb387f5798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapon Prefabs/Magic/FireballOverrideController.overrideController using Guid(65422e10f5157c644a550feb387f5798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2f4ec2140d66ee4cd3eef0c588a55f') in 0.035491 seconds
+  Import took 0.044052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Asset Packs/Knight/models/knight.fbx
+  artifactKey: Guid(ffaf641b210f5ea41952cf36f1379d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Knight/models/knight.fbx using Guid(ffaf641b210f5ea41952cf36f1379d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa97532db90f408459a8cfc5a3d5165') in 0.601491 seconds
+  Import took 0.609599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Scenes/SceneSample2/NavMesh.asset
+  artifactKey: Guid(263563830d963154cafa4ec9129c0436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SceneSample2/NavMesh.asset using Guid(263563830d963154cafa4ec9129c0436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297136ebdcdbce6fdf4aa04a71d93e30') in 0.003517 seconds
+  Import took 0.008802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/RPG Pack/Models/Coin.FBX
+  artifactKey: Guid(242d0c84f77361d4abc018c8b39c5d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Pack/Models/Coin.FBX using Guid(242d0c84f77361d4abc018c8b39c5d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc50a4222d62e9ead102d3da858cf2cd') in 0.025823 seconds
+  Import took 0.033222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/Asset Packs/Kevin Iglesias/Melee Warrior Animations Pack/Models/Characters/Human Melee Warrior.fbx
+  artifactKey: Guid(9035850883732af4daf57c888e1fefce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Kevin Iglesias/Melee Warrior Animations Pack/Models/Characters/Human Melee Warrior.fbx using Guid(9035850883732af4daf57c888e1fefce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2382daef942e6f6fad93afcbb9b8ac') in 0.072339 seconds
+  Import took 0.078447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/RPG Pack/Models/Bottles/bottle_green.FBX
+  artifactKey: Guid(73c33de544278cc40862c8e46858e7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Pack/Models/Bottles/bottle_green.FBX using Guid(73c33de544278cc40862c8e46858e7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918563bd77d4391e72e668ff35c3ff87') in 0.025535 seconds
+  Import took 0.030810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Asset Packs/Knight/models/textures/environmentmap1.png
+  artifactKey: Guid(19eb48c8ead896949b4eb482a8be0dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Knight/models/textures/environmentmap1.png using Guid(19eb48c8ead896949b4eb482a8be0dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef04b8e4547ca5df99ab8180f7ef4ba') in 0.036591 seconds
+  Import took 0.042283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Asset Packs/Knight/models/textures/environmentmap2.png
+  artifactKey: Guid(8edc74c87956ab540b784c5ee388f53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Knight/models/textures/environmentmap2.png using Guid(8edc74c87956ab540b784c5ee388f53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b757e9486eb61839d421af88d05cfc44') in 0.028664 seconds
+  Import took 0.034448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Club/Materials and Model/PolyVikings_Material_01.mat
+  artifactKey: Guid(eb83b2b658dfc194e8b26c4421e3c748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Club/Materials and Model/PolyVikings_Material_01.mat using Guid(eb83b2b658dfc194e8b26c4421e3c748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54af98c37486618efd278aa3cc13408f') in 0.011075 seconds
+  Import took 0.017433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Asset Packs/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@HandWave01.fbx
+  artifactKey: Guid(01d439dd451e3bd47aa6c48ab667751e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@HandWave01.fbx using Guid(01d439dd451e3bd47aa6c48ab667751e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8d4a932325e3e22797de4336bbac00') in 0.009036 seconds
+  Import took 0.015172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/RPG Pack/Models/Bottles/bottle_red.FBX
+  artifactKey: Guid(887a534051bdbf449b6fc141de3d5c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Pack/Models/Bottles/bottle_red.FBX using Guid(887a534051bdbf449b6fc141de3d5c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4928fafb3d4475c444a794cafddccd') in 0.025088 seconds
+  Import took 0.031040 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.410 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3320.
+Total: 2.979600 ms (FindLiveObjects: 0.368400 ms CreateObjectMapping: 0.171900 ms MarkObjects: 2.417900 ms  DeleteObjects: 0.019300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 112.818721 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(c858fcfe7cb09a94c8799250a74061e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(c858fcfe7cb09a94c8799250a74061e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298bd9ed28ce531f07862ddec16df73c') in 0.008561 seconds
+  Import took 0.015385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.012842 seconds.
+  path: Assets/Scripts/NotPutIntoSystemUse
+  artifactKey: Guid(8b3b1e92b450bb743822e7a386062016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NotPutIntoSystemUse using Guid(8b3b1e92b450bb743822e7a386062016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ea5dc1777c9d722e7e39ee75184c56') in 0.002835 seconds
+  Import took 0.009337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.926018 seconds.
+  path: Assets/Scripts/Movement
+  artifactKey: Guid(0e129cecd28b93543b3d6c7183ad40fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Movement using Guid(0e129cecd28b93543b3d6c7183ad40fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f8546140afbb840d08ffa7c29da828') in 0.002864 seconds
+  Import took 0.009390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.122370 seconds.
+  path: Assets/Scripts/Movement/AnimMovement.cs
+  artifactKey: Guid(5a1ff5a0a42ebf94596115054e97bbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Movement/AnimMovement.cs using Guid(5a1ff5a0a42ebf94596115054e97bbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410c5913e07ce5f7346265ff6fbe1e0e') in 0.062743 seconds
+  Import took 0.069286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 187.727793 seconds.
+  path: Assets/Scripts/Movement/AnimMovement.cs
+  artifactKey: Guid(5a1ff5a0a42ebf94596115054e97bbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Movement/AnimMovement.cs using Guid(5a1ff5a0a42ebf94596115054e97bbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8323531b6b75a1f57c1677ffbb67de0b') in 0.003780 seconds
+  Import took 0.010299 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002728 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.623 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3323.
+Total: 2.897600 ms (FindLiveObjects: 0.313800 ms CreateObjectMapping: 0.129800 ms MarkObjects: 2.430600 ms  DeleteObjects: 0.021600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
