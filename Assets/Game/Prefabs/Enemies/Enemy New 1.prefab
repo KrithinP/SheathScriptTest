@@ -864,6 +864,7 @@ GameObject:
   - component: {fileID: 7231574976798754643}
   - component: {fileID: 7231574976798754640}
   - component: {fileID: 7231574976798754641}
+  - component: {fileID: -1285269651421421559}
   m_Layer: 0
   m_Name: Enemy New 1
   m_TagString: Enemy
@@ -1043,6 +1044,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   maxSpeed: 6
+--- !u!114 &-1285269651421421559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7231574976798754634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb909d301dc9d74db2f0049430896af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLevel: 1
+  characterClass: 2
+  progression: {fileID: 11400000, guid: 9eed71c68dc9d0a43909de3783d2955c, type: 2}
 --- !u!1 &7231574976837656490
 GameObject:
   m_ObjectHideFlags: 0

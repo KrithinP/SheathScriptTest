@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1285269651421421559, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
+      propertyPath: characterClass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7231574976798754634, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
       propertyPath: m_Name
       value: Enemy Archer
@@ -16,13 +20,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: acfe4cb65e16b2641b1b7e66d6b48160, type: 2}
     - target: {fileID: 7231574976798754637, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
-      propertyPath: rightHandTransform
-      value: 
-      objectReference: {fileID: 5373996959413073168}
-    - target: {fileID: 7231574976798754637, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 5373996959401051311}
+    - target: {fileID: 7231574976798754637, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 5373996959413073168}
+    - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -36,6 +44,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -46,14 +58,6 @@ PrefabInstance:
     - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7231574976798754642, guid: 6aaaa611d2c569e4b965245f1158ce6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
