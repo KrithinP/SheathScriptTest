@@ -2063,8 +2063,8 @@ Transform:
   m_LocalPosition: {x: 35.08649, y: 1.5, z: 5.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1410765312}
   - {fileID: 4816020661419152506}
+  - {fileID: 1410765312}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6106,6 +6106,23 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.035051912, y: 0.2145089, z: 0.12948987}
     m_Extent: {x: 0.7688222, y: 0.668301, z: 0.95111597}
   m_DirtyAABB: 0
+--- !u!1 &2080086749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 270442773369157230, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
+  m_PrefabInstance: {fileID: 2637567895350947397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2080086753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080086749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cc406e0b8c1e2409097d9015bee490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083214667
 GameObject:
   m_ObjectHideFlags: 0
@@ -6707,7 +6724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 460451997, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16367279
+      value: 0.16367288
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6715,7 +6732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18151926
+      value: 0.18151933
       objectReference: {fileID: 0}
     - target: {fileID: 2637567894841083330, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6797,6 +6814,10 @@ PrefabInstance:
       propertyPath: defaultWeapon
       value: 
       objectReference: {fileID: 11400000, guid: c58e12128d8a6b74ebd5593109e1b55d, type: 2}
+    - target: {fileID: 9146366614678380752, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9146366614678380753, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: healthPoints
       value: 400
@@ -6820,7 +6841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb909d301dc9d74db2f0049430896af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingLevel: 1
+  startingLevel: 3
   characterClass: 0
   progression: {fileID: 11400000, guid: 9eed71c68dc9d0a43909de3783d2955c, type: 2}
 --- !u!1001 &4539416247674387530
@@ -6997,7 +7018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &4816020661419057113
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7253,7 +7274,7 @@ Transform:
   - {fileID: 2036486257}
   - {fileID: 650272026}
   m_Father: {fileID: 814046335}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4816020661419164212
 Transform:

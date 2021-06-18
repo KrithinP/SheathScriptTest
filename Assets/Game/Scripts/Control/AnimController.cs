@@ -1,16 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Animations.Rigging;
-//using UnityEditor.
 using Cinemachine;
 using UnityEngine.AI;
-using UnityEngine.SceneManagement;
-
-using RPG.Character;
 using RPG.Movement;
 using RPG.Combat;
-using RPG.Core;
+using RPG.Resources;
 
 namespace RPG.Control
 {

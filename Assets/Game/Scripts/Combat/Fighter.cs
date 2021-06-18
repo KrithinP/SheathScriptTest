@@ -2,7 +2,7 @@
 using UnityEngine.AI;
 using RPG.Movement;
 using RPG.Core;
-using System;
+using RPG.Resources;
 
 namespace RPG.Combat
 {
@@ -171,7 +171,17 @@ namespace RPG.Combat
             anim.SetTrigger("StopAttack");
         }
         //animation event
+        public object CaptureState()
+        {
+            return currentWeapon.name;
+        }
 
+        public void RestoreState(object state)
+        {
+            string weaponName = (string)state;
+            Weapon weapon = UnityEngine.Resources.Load<Weapon>(weaponName);
+            EquipWeapon(weapon);
+        }
     }
 
 
