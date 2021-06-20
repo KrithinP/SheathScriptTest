@@ -84,8 +84,11 @@ namespace RPG.Combat
                     AttackBehavior();
                 }
             }
+        }
 
-
+        public Health GetTarget()
+        {
+            return target;
         }
 
         public void EquipWeapon(Weapon weapon)
@@ -122,16 +125,16 @@ namespace RPG.Combat
 
             if(currentWeapon.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
             }
             else
             {
-                target.TakeDamage(currentWeapon.GetDamage());
+                target.TakeDamage(gameObject, currentWeapon.GetDamage());
             }
 
             Debug.LogWarning("Target" + target);
            // Health healthComponent = target.GetComponent<Health>();
-            target.TakeDamage(currentWeapon.GetDamage());
+            target.TakeDamage(gameObject, currentWeapon.GetDamage());
         }
 
         void Shoot()

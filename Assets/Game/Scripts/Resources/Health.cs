@@ -4,7 +4,7 @@ using UnityEngine;
 using RPG.Saving;
 using RPG.Stats;
 using RPG.Core;
-
+using System;
 
 namespace RPG.Resources
 {
@@ -22,14 +22,22 @@ namespace RPG.Resources
             return isDead;
         }
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0); //mathf max in this if health is less than the damge dealt it will round health to 0, so max of the 2 values given
             Debug.LogWarning("Health" + healthPoints);
             if (healthPoints == 0)
             {
                 Die();
+                AwardExperience(instigator);
             }
+        }
+
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience =  instigator.GetComponent<Experience>();
+            if (experience == null) return;
+            experience.GetExperience(GetComponent<BaseStats>().GetExperience());
         }
 
         public float GetPercentage()

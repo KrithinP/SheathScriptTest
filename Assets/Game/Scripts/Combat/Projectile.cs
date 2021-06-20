@@ -9,6 +9,9 @@ public class Projectile : MonoBehaviour
     [SerializeField] bool isHoming;
 
     Health target = null;
+
+    GameObject instigator = null;
+
     float damage = 0;
 
     // Start is called before the first frame update
@@ -33,10 +36,11 @@ public class Projectile : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
-    public void SetTarget(Health target, float damage)
+    public void SetTarget(Health target, GameObject instigator, float damage)
     {
         this.target = target;
         this.damage = damage;
+        this.instigator = instigator;
     }
 
     private Vector3 GetAimLocation()
@@ -56,7 +60,7 @@ public class Projectile : MonoBehaviour
             return;
         }
         if (target.IsDead()) return;
-        target.TakeDamage(damage);
+        target.TakeDamage(instigator, damage);
         Destroy(gameObject);
     }
 }
