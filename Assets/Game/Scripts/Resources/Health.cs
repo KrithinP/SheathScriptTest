@@ -16,6 +16,7 @@ namespace RPG.Resources
         private void Start()
         {
             healthPoints = GetComponent<BaseStats>().GetHealth();
+            //Debug.LogWarning("Health" + healthPoints);
         }
         public bool IsDead()
         {
@@ -42,7 +43,9 @@ namespace RPG.Resources
 
         public float GetPercentage()
         {
+            Debug.LogWarning("Get health" + GetComponent<BaseStats>().GetHealth() + "health points" + healthPoints);
             return (healthPoints / GetComponent<BaseStats>().GetHealth())*100;
+
         }
 
         private void Die()
