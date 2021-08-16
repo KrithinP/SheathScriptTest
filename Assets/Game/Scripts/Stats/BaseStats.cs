@@ -13,6 +13,7 @@ namespace RPG.Stats
 
     public float GetHealth()
         {
+            Debug.Log($"Checking {name}'s health class = {characterClass} level = {startingLevel}");
             return progression.GetHealth(characterClass, startingLevel);
         }
         public float GetExperience()

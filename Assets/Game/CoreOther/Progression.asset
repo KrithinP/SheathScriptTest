@@ -24,7 +24,12 @@ MonoBehaviour:
       - 200
     - stat: 1
       levels: []
-    health: []
+    health:
+    - 10
+    - 20
+    - 40
+    - 60
+    - 0
   - characterClass: 2
     stats:
     - stat: 0
@@ -35,7 +40,12 @@ MonoBehaviour:
       - 90
     - stat: 0
       levels: []
-    health: []
+    health:
+    - 10
+    - 10
+    - 10
+    - 1010
+    - 10000
   - characterClass: 6
     stats:
     - stat: 0
@@ -44,6 +54,9 @@ MonoBehaviour:
       - 20
       - 30
       - 40
-    - stat: 0
-      levels: []
-    health: []
+    health:
+    - 10
+    - 1020
+    - 2030400
+    - 2030030
+    - 3.494995e+9

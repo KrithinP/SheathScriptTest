@@ -13,6 +13,7 @@ namespace RPG.Stats
             {
                 if (progressionClass.characterClass == characterClass)
                 {
+                  //  Debug.Log($"{characterClass}.health.Count = {progressionClass.health}");
                     return progressionClass.health[level +1];
                 }
             }
