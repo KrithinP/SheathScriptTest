@@ -1,2 +1,2 @@
 # SheathScriptTest
- My game , ik not an appropriate name
+ My ongoing unity rpg game in development
