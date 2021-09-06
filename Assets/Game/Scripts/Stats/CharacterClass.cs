@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace RPG.Stats
 {
     public enum CharacterClass
@@ -10,7 +6,7 @@ namespace RPG.Stats
         Wizards,
         Grunt,
         Soldier,
-        Foz,
+        Fox,
         Wolf,
         Archer
     }

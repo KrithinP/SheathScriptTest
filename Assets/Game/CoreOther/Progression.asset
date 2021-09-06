@@ -23,7 +23,12 @@ MonoBehaviour:
       - 160
       - 200
     - stat: 1
-      levels: []
+      levels:
+      - 5
+      - 7
+      - 7
+      - 8
+      - 9
     health:
     - 10
     - 20
