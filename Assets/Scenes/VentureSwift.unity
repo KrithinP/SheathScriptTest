@@ -3995,7 +3995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf730f835902e1a4687064484f3bf2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
 --- !u!1 &1333243601
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,7 +6723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 460451997, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16367283
+      value: 0.1636727
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6732,7 +6731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18151918
+      value: 0.1815192
       objectReference: {fileID: 0}
     - target: {fileID: 2637567894841083330, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6798,6 +6797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
+    - target: {fileID: 8480517954978231939, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
+      propertyPath: startingLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9146366613544771242, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: target
       value: 
@@ -6810,53 +6813,12 @@ PrefabInstance:
       propertyPath: respawnPointObject
       value: 
       objectReference: {fileID: 551994425}
-    - target: {fileID: 9146366614678380752, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
-      propertyPath: defaultWeapon
-      value: 
-      objectReference: {fileID: 11400000, guid: c58e12128d8a6b74ebd5593109e1b55d, type: 2}
-    - target: {fileID: 9146366614678380752, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 9146366614678380753, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: healthPoints
       value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
---- !u!1 &2637567895350947398 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6784231887202470398, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
-  m_PrefabInstance: {fileID: 2637567895350947397}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2637567895350947399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2637567895350947398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bb909d301dc9d74db2f0049430896af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingLevel: 3
-  characterClass: 0
-  progression: {fileID: 11400000, guid: 9eed71c68dc9d0a43909de3783d2955c, type: 2}
---- !u!114 &2637567895350947415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2637567895350947398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9623c252d7fe1443ac6f48fb580a725, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  experiencePoits: 0
 --- !u!1001 &4539416247674387530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7220,7 +7182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf730f835902e1a4687064484f3bf2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
 --- !u!1 &4816020661419078598
 GameObject:
   m_ObjectHideFlags: 0

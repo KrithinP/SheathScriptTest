@@ -7,12 +7,17 @@ namespace RPG.Resources
 {
     public class Health : MonoBehaviour, ISaveable
     {
-        public float healthPoints = 100f;
+        float healthPoints = -1f;
+
         bool isDead = false;
 
         private void Start()
         {
-            healthPoints = GetComponent<BaseStats>().GetHealth();
+            if (healthPoints < 0)
+            {
+                healthPoints = GetComponent<BaseStats>().GetStat(Stats.Stat.Health);
+            }
+            
             //Debug.LogWarning("Health" + healthPoints);
         }
         public bool IsDead()
@@ -35,13 +40,14 @@ namespace RPG.Resources
         {
             Experience experience =  instigator.GetComponent<Experience>();
             if (experience == null) return;
-            experience.GetExperience(GetComponent<BaseStats>().GetExperience());
+
+            experience.GetExperience(GetComponent<BaseStats>().GetStat(Stats.Stat.ExperienceReward));
         }
 
         public float GetPercentage()
         {
-            Debug.LogWarning("Get health" + GetComponent<BaseStats>().GetHealth() + "health points" + healthPoints);
-            return (healthPoints / GetComponent<BaseStats>().GetHealth())*100;
+            Debug.LogWarning("Get health" + GetComponent<BaseStats>().GetStat(Stats.Stat.Health) + "health points" + healthPoints);
+            return (healthPoints / GetComponent<BaseStats>().GetStat(Stats.Stat.Health)) *100;
 
         }
 
