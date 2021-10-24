@@ -2,6 +2,7 @@
 using RPG.Saving;
 using RPG.Stats;
 using RPG.Core;
+using System;
 
 namespace RPG.Resources
 {
@@ -9,17 +10,23 @@ namespace RPG.Resources
     {
         float healthPoints = -1f;
 
+        [SerializeField] float RegenerationHealthPercentage = 70f;
+
         bool isDead = false;
 
         private void Start()
         {
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
             if (healthPoints < 0)
             {
                 healthPoints = GetComponent<BaseStats>().GetStat(Stats.Stat.Health);
             }
             
             //Debug.LogWarning("Health" + healthPoints);
+        
+
         }
+
         public bool IsDead()
         {
             return isDead;
@@ -44,6 +51,7 @@ namespace RPG.Resources
             experience.GetExperience(GetComponent<BaseStats>().GetStat(Stats.Stat.ExperienceReward));
         }
 
+
         public float GetPercentage()
         {
             Debug.LogWarning("Get health" + GetComponent<BaseStats>().GetStat(Stats.Stat.Health) + "health points" + healthPoints);
@@ -65,6 +73,11 @@ namespace RPG.Resources
             {
                 GetComponent<ActionScheduler>().CancelCurrentAction();
             }
+        }
+         private void RegenerateHealth()
+         {
+            float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stats.Stat.Health) * (RegenerationHealthPercentage/100.0f);
+            healthPoints = Mathf.Max(healthPoints, regenHealthPoints); 
         }
 
         public object CaptureState()

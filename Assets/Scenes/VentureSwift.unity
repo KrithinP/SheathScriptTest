@@ -3995,6 +3995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf730f835902e1a4687064484f3bf2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RegenerationHealthPercentage: 70
 --- !u!1 &1333243601
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,15 +6724,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 460451997, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1636727
+      value: 0.16367286
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9833875
+      value: 0.9833874
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1815192
+      value: 0.18151939
       objectReference: {fileID: 0}
     - target: {fileID: 2637567894841083330, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6801,6 +6802,10 @@ PrefabInstance:
       propertyPath: startingLevel
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8480517954978231939, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
+      propertyPath: levelUpParticleEffect
+      value: 
+      objectReference: {fileID: 4081818816387178068, guid: 7c01d2b7857313f469e1d72c07111bbc, type: 3}
     - target: {fileID: 9146366613544771242, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: target
       value: 
@@ -7182,6 +7187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf730f835902e1a4687064484f3bf2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RegenerationHealthPercentage: 70
 --- !u!1 &4816020661419078598
 GameObject:
   m_ObjectHideFlags: 0
