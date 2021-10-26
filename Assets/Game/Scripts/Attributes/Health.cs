@@ -34,6 +34,7 @@ namespace RPG.Resources
 
         public void TakeDamage(GameObject instigator, float damage)
         {
+            print(gameObject.name + " took damage" + damage);
             healthPoints = Mathf.Max(healthPoints - damage, 0); //mathf max in this if health is less than the damge dealt it will round health to 0, so max of the 2 values given
             Debug.LogWarning("Health" + healthPoints);
             if (healthPoints == 0)
@@ -43,6 +44,15 @@ namespace RPG.Resources
             }
         }
 
+        public float GetHealthPoints()
+        {
+            return healthPoints;
+        }
+
+        public float GetMaxHealth()
+        {
+            return GetComponent<BaseStats>().GetStat(Stats.Stat.Health);
+        }
         private void AwardExperience(GameObject instigator)
         {
             Experience experience =  instigator.GetComponent<Experience>();

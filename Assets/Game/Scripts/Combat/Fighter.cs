@@ -3,10 +3,13 @@ using UnityEngine.AI;
 using RPG.Movement;
 using RPG.Core;
 using RPG.Resources;
+using RPG.Stats;
+using RPG.Saving;
+using System.Collections.Generic;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour , IAction
+    public class Fighter : MonoBehaviour , IAction, ISaveable , IModifierProvider    
     {
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] Transform rightHandTransform;
@@ -122,14 +125,15 @@ namespace RPG.Combat
             {
                 return;
             }
-
-            if(currentWeapon.HasProjectile())
+             float damage = GetComponent<BaseStats>().GetStat(Stats.Stat.Damage);
+            if (currentWeapon.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject,damage);
             }
             else
             {
-                target.TakeDamage(gameObject, currentWeapon.GetDamage());
+                
+                target.TakeDamage(gameObject, damage);
             }
 
             Debug.LogWarning("Target" + target);
@@ -173,6 +177,13 @@ namespace RPG.Combat
             anim.ResetTrigger("Attack");
             anim.SetTrigger("StopAttack");
         }
+        public IEnumerable<float> GetAdditiveModifier(Stats.Stat stat)
+        {
+            if(stat  == Stats.Stat.Damage)
+            {
+                yield return currentWeapon.GetDamage();
+            }
+        }
         //animation event
         public object CaptureState()
         {
@@ -185,6 +196,8 @@ namespace RPG.Combat
             Weapon weapon = UnityEngine.Resources.Load<Weapon>(weaponName);
             EquipWeapon(weapon);
         }
+
+
     }
 
 
