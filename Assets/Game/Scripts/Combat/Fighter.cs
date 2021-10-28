@@ -197,7 +197,21 @@ namespace RPG.Combat
             EquipWeapon(weapon);
         }
 
+        public IEnumerable<float> GetAdditiveModifiers(Stats.Stat stat)
+        {
+            if(stat == Stats.Stat.Damage)
+            {
+                yield return currentWeapon.GetDamage();
+            }
+        }
 
+        public IEnumerable<float> GetPercentageModifiers(Stats.Stat stat)
+        {
+            if (stat == Stats.Stat.Damage)
+            {
+                yield return currentWeapon.GetPercentageBonus();
+            }
+        }
     }
 
 

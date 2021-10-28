@@ -46,7 +46,14 @@ namespace RPG.Stats
 
         public float GetStat(Stat stat)
         {
-             return progression.GetStat(stat, characterClass, GetLevel()) + GetAdditiveModifiers(stat);
+            return (GetBaseStat(stat) + GetAdditiveModifiers(stat))* (1+ GetPercentageModifier(stat)/100);
+        }
+
+
+
+        private float GetBaseStat(Stat stat)
+        {
+            return progression.GetStat(stat, characterClass, GetLevel());
         }
 
         private float GetAdditiveModifiers(Stat stat)
@@ -54,7 +61,7 @@ namespace RPG.Stats
             float total = 0;
             foreach (IModifierProvider provider in GetComponents<IModifierProvider>())
             {
-                foreach (float modifier in provider.GetAdditiveModifier(stat))
+                foreach (float modifier in provider.GetAdditiveModifiers(stat))
                 {
                     total += modifier;
                 }
@@ -62,6 +69,18 @@ namespace RPG.Stats
             return total;
         }
 
+        private float GetPercentageModifier(Stat stat)
+        {
+            float percentageTotal = 0;
+            foreach (IModifierProvider provider in GetComponents<IModifierProvider>())
+            {
+                foreach (float modifier in provider.GetAdditiveModifiers(stat))
+                {
+                    percentageTotal += modifier;
+                }
+            }
+            return percentageTotal;
+        }
         public int GetLevel()
         {
             if (currentLevel < 1)
