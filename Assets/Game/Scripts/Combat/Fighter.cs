@@ -48,8 +48,6 @@ namespace RPG.Combat
         // Update is called once per frame
         private void Update()
         {
-            // if (target == null) return;
-            // Debug.LogWarning("Target " + target.name);
             timeSinceLastAttack += Time.deltaTime;
 
             if (target != null)
@@ -69,9 +67,6 @@ namespace RPG.Combat
                         mover.MoveTo(target.transform.position, 1f);
                     }
 
-                   // Debug.LogWarning("destination" + navMeshAgent.destination);
-                    //Debug.LogWarning("Distance:" + Vector3.Distance(transform.position, target.transform.position));
-                    //target = null;
                 }
                 else
                 {
@@ -121,11 +116,11 @@ namespace RPG.Combat
 
         void Hit()
         {
-            if(target == null)
-            {
-                return;
-            }
-             float damage = GetComponent<BaseStats>().GetStat(Stats.Stat.Damage);
+            if (target == null) return;
+
+            float damage = GetComponent<BaseStats>().GetStat(Stats.Stat.Damage);
+            print("Damage " + damage);
+
             if (currentWeapon.HasProjectile())
             {
                 currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject,damage);
@@ -137,8 +132,6 @@ namespace RPG.Combat
             }
 
             Debug.LogWarning("Target" + target);
-           // Health healthComponent = target.GetComponent<Health>();
-            target.TakeDamage(gameObject, currentWeapon.GetDamage());
         }
 
         void Shoot()
@@ -177,13 +170,7 @@ namespace RPG.Combat
             anim.ResetTrigger("Attack");
             anim.SetTrigger("StopAttack");
         }
-        public IEnumerable<float> GetAdditiveModifier(Stats.Stat stat)
-        {
-            if(stat  == Stats.Stat.Damage)
-            {
-                yield return currentWeapon.GetDamage();
-            }
-        }
+
         //animation event
         public object CaptureState()
         {

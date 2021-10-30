@@ -136,7 +136,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460451996}
-  m_LocalRotation: {x: 0.16367307, y: -0, z: -0, w: 0.9865146}
+  m_LocalRotation: {x: 0.16367297, y: -0, z: -0, w: 0.9865147}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -311,7 +311,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799233405}
-  m_LocalRotation: {x: 0.18151887, y: -0, z: -0, w: 0.98338753}
+  m_LocalRotation: {x: 0.18151917, y: -0, z: -0, w: 0.9833875}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf730f835902e1a4687064484f3bf2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
+  RegenerationHealthPercentage: 70
 --- !u!114 &2637567894905446737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19472,6 +19472,10 @@ PrefabInstance:
       propertyPath: knightThirdPersonCam
       value: 
       objectReference: {fileID: 2637567896040254318}
+    - target: {fileID: 819287740751411090, guid: e17e82c5f0a0a484cb8ce6607264a03b, type: 3}
+      propertyPath: shouldUseModifiers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6518096240439819336, guid: e17e82c5f0a0a484cb8ce6607264a03b, type: 3}
       propertyPath: m_Name
       value: CharacterController

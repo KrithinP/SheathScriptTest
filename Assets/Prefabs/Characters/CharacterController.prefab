@@ -25,9 +25,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb909d301dc9d74db2f0049430896af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingLevel: 3
+  startingLevel: 1
   characterClass: 0
   progression: {fileID: 11400000, guid: 9eed71c68dc9d0a43909de3783d2955c, type: 2}
+  levelUpParticleEffect: {fileID: 4081818816387178068, guid: 7c01d2b7857313f469e1d72c07111bbc, type: 3}
+  shouldUseModifiers: 0
 --- !u!1 &6518096240439819336
 GameObject:
   m_ObjectHideFlags: 0

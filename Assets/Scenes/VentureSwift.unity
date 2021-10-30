@@ -6724,15 +6724,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 460451997, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16367286
+      value: 0.16367283
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9833874
+      value: 0.98338753
       objectReference: {fileID: 0}
     - target: {fileID: 799233406, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18151939
+      value: 0.18151884
       objectReference: {fileID: 0}
     - target: {fileID: 2637567894841083330, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6744,11 +6744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2637567894841083330, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98285556
+      value: 0.9828557
       objectReference: {fileID: 0}
     - target: {fileID: 2637567894841083330, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18437727
+      value: 0.1843766
       objectReference: {fileID: 0}
     - target: {fileID: 2637567894841679097, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: m_RootOrder
@@ -6798,14 +6798,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
-    - target: {fileID: 8480517954978231939, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
-      propertyPath: startingLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8480517954978231939, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
-      propertyPath: levelUpParticleEffect
-      value: 
-      objectReference: {fileID: 4081818816387178068, guid: 7c01d2b7857313f469e1d72c07111bbc, type: 3}
     - target: {fileID: 9146366613544771242, guid: 31981fabba9ee594c8dabd7355750877, type: 3}
       propertyPath: target
       value: 
