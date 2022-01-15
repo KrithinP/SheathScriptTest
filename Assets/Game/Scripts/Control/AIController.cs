@@ -19,7 +19,6 @@ namespace RPG.Control
         GameObject player;
         Health health;
         Mover mover;
-       // AnimMovement animMovement;
 
         Vector3 guardPosition;
         float timeSinceLastSawPlayer = Mathf.Infinity;

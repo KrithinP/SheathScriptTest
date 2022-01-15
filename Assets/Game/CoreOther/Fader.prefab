@@ -85,6 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &428440255192773027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,8 +112,8 @@ CanvasGroup:
   m_GameObject: {fileID: 428440255192773037}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!222 &428440255192773025
 CanvasRenderer:

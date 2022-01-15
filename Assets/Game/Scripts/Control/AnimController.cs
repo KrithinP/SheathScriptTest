@@ -6,12 +6,33 @@ using UnityEngine.AI;
 using RPG.Movement;
 using RPG.Combat;
 using RPG.Resources;
+using System;
+using UnityEngine.EventSystems;
 
 namespace RPG.Control
 {
     public class AnimController : MonoBehaviour
     {
+        enum CursorType
+        {
+            None,
+            Move,
+            Combat,
+            UI,
+
+        }
+
+        [System.Serializable]
+        struct CursorMapping
+        {
+            public CursorType type;
+            public Texture2D texture;
+            public Vector2 hotspot;
+        }
+
+        [SerializeField] CursorMapping[] cursorMappings = null;
         #region variables
+
         public GameObject MyHumanoid;
         public GameObject MyHumanoidPrefab;
         public GameObject pet;
@@ -99,54 +120,56 @@ namespace RPG.Control
 
         private void Update()
         {
+            if (InteractWithUI()) return;
             if (health.IsDead())
             {
+                SetCursor(CursorType.None);
                 return;
             }
 
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
             print("nothing to do");
+            SetCursor(CursorType.None);
+            /*           if (Input.GetKeyDown(characterCamSwitch))
+                       {
+                           if (knightCameraIsActive)
+                           {
+                               Debug.LogWarning("switchcamera to pet reached");
+                               knightThirdPersonCam.Priority = 10;
+                               petThirdPersonCamera.Priority = 11;
+                               knightCameraIsActive = false;
+                               Debug.LogWarning(knightCameraIsActive + " ");
+                               //MyHumanoid.SetActive (false);
+                               switchingCameras = true;
+                               hScript.StartDissolve();
+                               //pet.SetActive(true);
 
- /*           if (Input.GetKeyDown(characterCamSwitch))
-            {
-                if (knightCameraIsActive)
-                {
-                    Debug.LogWarning("switchcamera to pet reached");
-                    knightThirdPersonCam.Priority = 10;
-                    petThirdPersonCamera.Priority = 11;
-                    knightCameraIsActive = false;
-                    Debug.LogWarning(knightCameraIsActive + " ");
-                    //MyHumanoid.SetActive (false);
-                    switchingCameras = true;
-                    hScript.StartDissolve();
-                    //pet.SetActive(true);
-                    
-                }
-                else
-                {
-                    knightThirdPersonCam.Priority = 11;
-                    petThirdPersonCamera.Priority = 10;
-                    knightCameraIsActive = true;
-                    MyHumanoid.SetActive(true);
-                    switchingCameras = true;
-                    hScript.Undissolve();
-                    //pet.SetActive(false);
-                }
-                //if(navmesh agent from other code required)
-                if( navMeshAgent.enabled == true)
-                {
+                           }
+                           else
+                           {
+                               knightThirdPersonCam.Priority = 11;
+                               petThirdPersonCamera.Priority = 10;
+                               knightCameraIsActive = true;
+                               MyHumanoid.SetActive(true);
+                               switchingCameras = true;
+                               hScript.Undissolve();
+                               //pet.SetActive(false);
+                           }
+                           //if(navmesh agent from other code required)
+                           if( navMeshAgent.enabled == true)
+                           {
 
-                }
+                           }
 
-            }
+                       }
 
-            */
+                       */
 
-          /*  void MoveTo(Vector3 destination)
-            {
-                MyHumanoid.GetComponent<NavMeshAgent>().destination = destination;
-            }*/
+            /*  void MoveTo(Vector3 destination)
+              {
+                  MyHumanoid.GetComponent<NavMeshAgent>().destination = destination;
+              }*/
 
 
 
@@ -235,7 +258,17 @@ namespace RPG.Control
          }*/
         }
 
-        bool InteractWithCombat()
+        private bool InteractWithUI()
+        {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                SetCursor(CursorType.UI);
+                return true;
+            }
+            return false;
+        }
+
+        private bool InteractWithCombat()
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             Debug.LogWarning("raycasted");
@@ -255,11 +288,30 @@ namespace RPG.Control
                     MyHumanoid.GetComponent<Fighter>().Attack(target.gameObject);
                     Debug.LogWarning("target found");
                 }
+                SetCursor(CursorType.Combat);
                 return true;
             }
             // GetComponent<Fighter>().Attack(null);
             Debug.LogWarning("target not found");
             return false;
+        }
+
+        private void SetCursor(CursorType type)
+        {
+            CursorMapping mapping = GetCursorMapping(type);
+            Cursor.SetCursor(mapping.texture, mapping.hotspot, CursorMode.Auto);
+        }
+
+        private  CursorMapping GetCursorMapping(CursorType type)
+        {
+            foreach (CursorMapping mapping  in cursorMappings)
+            {
+                if(mapping.type == type)
+                {
+                    return mapping;
+                }
+            }
+            return cursorMappings[0];
         }
 
         bool InteractWithMovement()
@@ -275,6 +327,7 @@ namespace RPG.Control
 
                     Debug.LogWarning("Hit Point :"+hit.point);
                 }
+                SetCursor(CursorType.Move);
                 return true;
                 //controller.enabled = false;
             }

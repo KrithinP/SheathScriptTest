@@ -1,0 +1,4 @@
+interface Raycastable
+{
+    bool HanleRaycast();
+}
